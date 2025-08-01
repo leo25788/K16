@@ -1,0 +1,46 @@
+<!DOCTYPE html>: Mặc dù không phải là một thẻ, nhưng đây là khai báo bắt buộc đầu tiên trong mọi tài liệu HTML. Nó định nghĩa phiên bản của HTML mà trình duyệt sẽ sử dụng để render trang web, đảm bảo các thẻ được xử lý đúng cách.
+<html>: Đây là thẻ gốc (root element) của toàn bộ trang web. Tất cả các thành phần khác, bao gồm <head> và <body>, đều nằm bên trong thẻ <html>.
+<head>: Thẻ này chứa các siêu dữ liệu (metadata) của trang web, tức là thông tin không hiển thị trực tiếp trên trình duyệt nhưng rất quan trọng đối với trang web và các công cụ tìm kiếm. Các thẻ phổ biến bên trong <head> bao gồm:
+
+<title>: Định nghĩa tiêu đề của trang, hiển thị trên thanh tiêu đề của trình duyệt hoặc tab.
+
+<meta>: Cung cấp các thông tin siêu dữ liệu khác nhau, như bộ mã ký tự (charset="UTF-8"), mô tả trang web, từ khóa, và khả năng tương thích với các trình duyệt.
+
+<link>: Liên kết trang web với các tài nguyên bên ngoài, phổ biến nhất là tệp CSS (<link rel="stylesheet" href="style.css">).
+
+<style>: Chứa các đoạn mã CSS được viết trực tiếp trong tệp HTML.
+
+<script>: Liên kết đến hoặc chứa các đoạn mã JavaScript để xử lý logic tương tác trên trang.
+
+<body>: Thẻ này chứa tất cả nội dung hiển thị cho người dùng trên trình duyệt. Đây là nơi chứa các thành phần trực quan như văn bản, hình ảnh, liên kết, bảng, danh sách, và các nút. Các thẻ phổ biến bên trong <body> bao gồm:
+
+Các thẻ tiêu đề: <h1>, <h2>, <h3>, <h4>, <h5>, <h6> (sắp xếp theo độ quan trọng giảm dần).
+
+Các thẻ văn bản: <p> (đoạn văn), <span> (phạm vi nội tuyến), <br> (ngắt dòng), <strong> (in đậm).
+
+Các thẻ danh sách: <ul> (danh sách không có thứ tự), <ol> (danh sách có thứ tự), và <li> (mục trong danh sách).
+
+Các thẻ liên kết: <a> (liên kết đến trang khác).
+
+Các thẻ đa phương tiện: <img> (hình ảnh), <video>, <audio>.
+
+Các thẻ cấu trúc: <div> (một khối chung), <header>, <nav>, <main>, <article>, <section>, <footer> (dùng để định nghĩa các khu vực chức năng cụ thể).
+
+Các thẻ biểu mẫu: <form>, <input>, <button>, <label>.
+
+
+Để tạo một bảng (table) trong HTML, bạn sử dụng các thẻ sau để định nghĩa cấu trúc:
+
+<table>: Thẻ này là thẻ bao bọc toàn bộ nội dung của bảng.
+
+<thead>: Nhóm các hàng tiêu đề của bảng.
+
+<tbody>: Nhóm các hàng chứa dữ liệu chính của bảng.
+
+<tfoot>: Nhóm các hàng chân trang của bảng (ví dụ: hàng tổng cộng).
+
+<tr>: Đại diện cho một hàng (table row) trong bảng.
+
+<th>: Đại diện cho một ô tiêu đề (table header cell). Thường được đặt trong <thead>. Trình duyệt sẽ tự động in đậm và căn giữa nội dung trong thẻ này.
+
+<td>: Đại diện cho một ô dữ liệu (table data cell). Thường được đặt trong <tbody>.
