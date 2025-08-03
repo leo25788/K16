@@ -1,7 +1,7 @@
 import { test } from "@playwright/test";
 
 
-test('Add 100 todos and delete odd todos', async ({ page }) => {
+test('Add record', async ({ page }) => {
     let test = [];
     let xpathtest;
     let xoa = '//*[@id="1-delete"]';
@@ -16,17 +16,18 @@ test('Add 100 todos and delete odd todos', async ({ page }) => {
         await page.locator('//*[@id="new-task"]').fill(`Todo ${i}`);
         await page.locator('//*[@id="add-task"]').click();
 
-         /* if ((i) % 2 !== 0) {
+          if ((i) % 2 !== 0) {
 
 
-        xpathtest = '//*[@id="' + i + '-delete"]';
-        console.log(xpathtest);
+        xpathtest = '//*[@id="todo-' + i + '-delete"]';
+        //console.log(xpathtest);
+        page.on('dialog', dialog => dialog.accept());
         await page.locator(xpathtest).click();
 
 
-    } */
+    } 
     }
-    await page.locator('//*[@id="1-delete"]').click();
+   
 
 
 });
